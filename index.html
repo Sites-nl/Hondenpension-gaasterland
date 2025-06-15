@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hondenpension Hemelum - Jouw Hond, Onze Zorg</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #333;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #ff7e5f;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 40px auto;
+            max-width: 1300px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #444;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .diensten-lijst {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .dienst {
+            flex: 1;
+            min-width: 280px;
+            padding: 25px;
+            border: 2px solid #f3f3f3;
+            border-radius: 15px;
+            background: #f9f9f9;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .dienst:hover {
+            transform: translateY(-15px);
+            background: #fffcf0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .dienst h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .dienst p {
+            font-size: 1.2rem;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding: 40px;
+            background: #e3e3e3;
+            border-radius: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 1rem;
+            margin-top: 60px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animaties */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* info sectie */
+        .info {
+            margin-top: 50px;
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Responsief ontwerp */
+        @media (max-width: 1200px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .diensten-lijst {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            .card {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fade-in">
+        <h1>Hondenpension Hemelum</h1>
+        <p>Jouw hond verdient het beste, en dat bieden wij!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#diensten">Diensten</a>
+        <a href="#over-ons">Over Ons</a>
+        <a href="#contact">Contact</a>
+        <a href="#info">info</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welkom bij Hondenpension Hemelum</h2>
+        <div class="highlight fade-in">
+            <p>Bij ons krijgt jouw hond de zorg, liefde en aandacht die hij verdient. Wij bieden dagopvang, logeren, wandelen en meer!</p>
+        </div>
+        <p>Gelegen in Hemelum, in het hart van Friesland, bieden wij een veilige en comfortabele omgeving voor jouw trouwe viervoeter. Onze ruime tuin en knusse verblijven zorgen ervoor dat jouw hond zich snel thuis voelt. We hebben daarnaast de ervaring en de passie om jouw hond te voorzien van de beste zorg.</p>
+        <p>Onze diensten zijn flexibel en aangepast aan de wensen van jouw hond. Of het nu gaat om een korte vakantie of een langdurig verblijf, jouw hond zal zich hier nooit vervelen. We zorgen voor genoeg beweging, afwisseling, en uiteraard liefde en aandacht!</p>
+    </section>
+
+    <section id="diensten">
+        <h2>Onze Diensten</h2>
+        <div class="diensten-lijst">
+            <div class="dienst">
+                <h3>Dagopvang</h3>
+                <p>Laat je hond bij ons spelen, leren en ontspannen onder deskundige begeleiding. Perfect voor werkende baasjes!</p>
+            </div>
+            <div class="dienst">
+                <h3>Wandelen</h3>
+                <p>Geniet van lange wandelingen door de natuur. We zorgen ervoor dat jouw hond genoeg beweging krijgt.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="info">
+        <h3>extra informatie</h3>
+        <p><strong>Moet mijn hond gevaccineerd zijn?</strong><br>Ja, we vragen dat je hond up-to-date is met alle vaccinaties voor een veilige omgeving voor alle honden.</p>
+        <h3>Onze Zorg voor Jouw Hond</h3>
+        <p>Bij Hondenpension Hemelum bieden we een veilige en comfortabele omgeving voor jouw hond. We zorgen voor voldoende beweging en interactie, en zorgen ervoor dat jouw hond zich snel thuis voelt in onze grote tuin.</p>
+        <h3>Honden met Speciale Behoeften</h3>
+        <p> Als jouw hond speciale zorg nodig heeft, bijvoorbeeld vanwege ouderdom of medicatie, laat het ons weten. We bieden persoonlijke zorg voor honden met speciale behoeften.</p>
+        <h3>honden met Vlooien </h3>
+        <p>Honden met vlooien of andere parasieten mogen niet bij ons verblijven om de gezondheid van andere honden te waarborgen.</p>
+    </section>
+
+    <section id="kaart" class="fade-in">
+        <h2>Onze Locatie</h2>
+        <p>Bekijk onze locatie op de kaart:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48988.956817209276!2d5.453405645168958!3d52.88410178376122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8b3787b14b933%3A0x47cc3d6b8e8b9b62!2sHondenpension%20Hemelum!5e0!3m2!1snl!2snl!4v1635103317895!5m2!1snl!2snl" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+    <p><strong>Adres:</strong> T Set 1, 8584 VZ Hemelum, Nederland</p>
+    
+    </section>
+
+    <footer>
+        <p>© 2024 Hondenpension Hemelum - Alle rechten voorbehouden. <a href="#">Privacybeleid</a></p>
+    </footer>
+</body>
+
+</html>
